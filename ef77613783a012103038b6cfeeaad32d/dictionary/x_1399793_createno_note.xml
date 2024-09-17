@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1a6aedf783a012103038b6cfeeaad3f2" label="Note" max_length="40" name="x_1399793_createno_note" type="collection">
+        <element label="Note" max_length="40" name="note" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element label="Number" max_length="40" name="number" type="integer"/>
+        <element choice="1" label="User" max_length="40" name="user" reference="sys_user" type="reference">
+            <choice/>
+        </element>
+    </element>
+</database>

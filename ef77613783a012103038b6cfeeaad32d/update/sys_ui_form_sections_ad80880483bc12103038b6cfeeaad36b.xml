@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="ad80880483bc12103038b6cfeeaad36b" sys_domain="global" table="x_1399793_createno_note" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-17 07:28:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a580880483bc12103038b6cfeeaad3d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1399793_createno_note" name="x_1399793_createno_note" sys_domain="global" view="Default view">ad80880483bc12103038b6cfeeaad36b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1399793_createno_note" sys_domain="global" view="Default view">682b293b83a012103038b6cfeeaad35e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-17 07:28:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-17 07:28:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2580880483bc12103038b6cfeeaad3d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1399793_createno_note" name="x_1399793_createno_note" sys_domain="global" view="Default view">ad80880483bc12103038b6cfeeaad36b</sys_ui_form>
+            <sys_ui_section caption="Statistics" display_value="Statistics" name="x_1399793_createno_note" sys_domain="global" view="Default view">2180880483bc12103038b6cfeeaad36a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-17 07:28:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1399793_createno_note</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-09-17 07:28:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad80880483bc12103038b6cfeeaad36b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1399793_createno_note</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CreateNotes" source="x_1399793_createno">ef77613783a012103038b6cfeeaad32d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CreateNotes">ef77613783a012103038b6cfeeaad32d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_ad80880483bc12103038b6cfeeaad36b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-09-17 07:28:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
