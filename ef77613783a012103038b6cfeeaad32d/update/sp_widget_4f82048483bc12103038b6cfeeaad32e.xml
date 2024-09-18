@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function($rootScope,$scope) {
+        <client_script><![CDATA[function($rootScope,$scope, spModal) {
 	/* widget controller */
 	var c = this;
 	c.selectItem = function(idx) {
@@ -10,6 +10,13 @@
 		$rootScope.noteID = id;
 		$rootScope.$emit('selectNote', id);
 	}
+	c.confirmDelete = function(){
+     spModal.confirm("Are you sure you want to delete this Note record?").then(function(confirmed){
+       if(confirmed){
+       c.deleteNote();
+       }
+     });
+   }
 }]]></client_script>
         <controller_as>c</controller_as>
         <css/>
@@ -32,6 +39,7 @@
 	var noteGR = new GlideRecord('x_1399793_createno_note');
 	noteGR.addQuery('user', gs.getUser().getID());
 	noteGR.orderByDesc('sys_created_on');
+	noteGR.setLimit(options.maximum_records_to_display);
 	noteGR.query();
 	while (noteGR.next()) {
 		var noteObj = {};
@@ -48,18 +56,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-17 07:37:04</sys_created_on>
         <sys_id>4f82048483bc12103038b6cfeeaad32e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Notes List</sys_name>
         <sys_package display_value="CreateNotes" source="x_1399793_createno">ef77613783a012103038b6cfeeaad32d</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">ef77613783a012103038b6cfeeaad32d</sys_scope>
         <sys_update_name>sp_widget_4f82048483bc12103038b6cfeeaad32e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-17 08:45:21</sys_updated_on>
+        <sys_updated_on>2024-09-18 06:23:02</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-heading clearfix">
     <h3 class="panel-title pull-left">
-      ${Notes}
+      {{::c.options.title}}
     </h3>
   </div>
   <div class="list-group">
